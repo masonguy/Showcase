@@ -1,0 +1,10 @@
+1. We are being asked to find the most likely sentence that was spoken by analyzing the edges of a lattice. We are going to do this by calculating the weights of each edge (combinedScore(e)) and sorting them with a topological sort. To test this we will be creating our own lattice files. Dot files will be used express the results of our finding the shortest path by mapping out the information in a lattice.
+
+2. Two of the biggest challenges we expect to face are one, understanding the big picture of how the program works and how each class and file is related. Because once we have that accurately mapped out we can systematically complete the program method by method. Also two, creating an asymptotically efficient sorting method of comparison.
+
+3. Tuesday 6:45 - 8:00. Thursday 12:00 - 3:00. Sunday 12:00 - 3:00.
+
+4. By Tuesday May 1st have a good general understanding of the program and plan for execution. By the end of Sunday 5th have come up with one testing lattice and have our sort implemented.
+Finish the program by May 12th.
+
+5. Office hours, Computer science mentoring, Oracle Java docs, StackOverflow.com.
