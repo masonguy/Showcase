@@ -1,2 +1,0 @@
-test1.lattice test1.ref
-test2.lattice test2.ref
