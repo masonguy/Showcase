@@ -1,0 +1,2 @@
+com/example/wwubricks/BuildConfig.java
+ com.example.wwubricks.BuildConfig
