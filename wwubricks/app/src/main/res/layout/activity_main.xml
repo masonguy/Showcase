@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="fill"
+    tools:context=".MainActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:background="@color/purple_500">
+
+       <ImageButton
+           android:id="@+id/all_images_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="50dp"
+           android:background="@color/purple_500"
+           android:src="@drawable/ic_round_view_module_24"
+           app:layout_constraintEnd_toStartOf="@id/homepage_button"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageButton
+           android:id="@+id/homepage_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@color/purple_500"
+           android:src="@drawable/ic_baseline_home_24"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageButton
+           android:id="@+id/camera_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="50dp"
+           android:background="@color/purple_500"
+           android:src="@drawable/ic_baseline_camera_alt_24"
+           app:layout_constraintStart_toEndOf="@id/homepage_button"
+           app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <FrameLayout
+       android:id="@+id/frame_body"
+       android:layout_width="match_parent"
+       android:layout_height="680dp"/>
+
+
+
+</LinearLayout>
