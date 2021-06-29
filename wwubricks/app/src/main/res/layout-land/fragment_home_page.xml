@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageFragment"
+    android:background="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/downvote_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_circle_down_24"
+            android:text="Up"
+            app:layout_constraintStart_toEndOf="@+id/webview"
+            app:layout_constraintTop_toBottomOf="@+id/upvote_button" />
+
+        <ImageButton
+            android:id="@+id/upvote_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="116dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_circle_up_24"
+            android:text="Down"
+            app:layout_constraintStart_toEndOf="@+id/webview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@id/newPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:text="Random Image"
+            app:layout_constraintStart_toEndOf="@+id/webview"
+            app:layout_constraintTop_toBottomOf="@+id/downvote_button" />
+
+        <TextView
+            android:id="@+id/vote_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.826" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
